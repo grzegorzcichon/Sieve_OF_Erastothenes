@@ -11,14 +11,12 @@ class CustomAppbar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Theme.of(context).colorScheme.AppbarColor,
       title: Center(
           child: Text(Str.label.sieveoferatosthenes,
               style: AppabarTextStyles.overline(
                   color: Theme.of(context).colorScheme.FontsColor,
                   context: context))),
-      systemOverlayStyle: SystemUiOverlayStyle.dark,
-      shadowColor: Color.fromARGB(255, 246, 218, 127),
+
       // shape: RoundedRectangleBorder(
       // borderRadius: BorderRadius.all(Radius.circular(30))),
     );
